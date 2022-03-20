@@ -74,7 +74,7 @@ MainSection:NewToggle("Bench", "Spam Health", function(v)
           if not getgenv().autobench then return end
           local Event = game:GetService("ReplicatedStorage").Remotes.Bench
           Event:FireServer()
-            wait()
+            wait(0.001)
        end
     end)
     local MainSection = Main:NewSection("Extra")
@@ -84,7 +84,7 @@ MainSection:NewToggle("Pushup", "Auto Pushup", function(v)
           if not getgenv().autopushup then return end
           local Event = game:GetService("ReplicatedStorage").Remotes.PushUp
           Event:FireServer()
-            wait()
+            wait(0.001)
        end
     end)
 MainSection:NewToggle("SitUp", "Auto SitUp", function(v)
